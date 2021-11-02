@@ -100,6 +100,9 @@ var carDetails = {
 */
 
 //Code Here
+let {color, make, model, year} = carDetails
+
+console.log(`${year} ${color} ${make} ${model}`)
 
 
 
