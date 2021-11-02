@@ -51,6 +51,14 @@ console.log(dog["color"])
 */
 
 //Code here
+const favoriteThings = {
+  band: "Daft Punk",
+  food: "Pizza",
+  person: "Scout",
+  book: "To Kill a Mockingbird",
+  movie: "Hocus Pocus",
+  holiday: "Halloween"
+}
 
 
 /*
@@ -58,6 +66,10 @@ console.log(dog["color"])
 */
 
 //Code here
+favoriteThings.car = "Subaru Impreza"
+favoriteThings.show = "The Office"
+
+console.log(favoriteThings)
 
 
 /*
@@ -66,6 +78,10 @@ console.log(dog["color"])
 */
 
 //Code here
+favoriteThings.food = "chicken nuggets"
+favoriteThings.book = "Harry Potter"
+
+console.log(favoriteThings)
 
 
 //////////////////////////// PROBLEM 6 ////////////////////////////
