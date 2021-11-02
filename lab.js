@@ -116,6 +116,7 @@ console.log(`${year} ${color} ${make} ${model}`)
 
 function greeting( obj ) {
   //Code Here
+  const {firstName, lastName, title} = obj
   
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
