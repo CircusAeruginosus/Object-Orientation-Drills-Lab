@@ -137,18 +137,17 @@ function greeting( obj ) {
 
 //Code Here
 
-// const object = {
-//   utah: 1,
-//   california: 2,
-//   texas: 3,
-//   arizona: 4
-// }
+const object = {
+  utah: 1,
+  california: 2,
+  texas: 3,
+  arizona: 4
+}
 function totalPopulation(object){
   const {utah, california, texas, arizona} = object
-  return utah + california + texas + arizona
+  return utah + california+ texas + arizona
 }
-// totalPopulation(object)
-// console.log(object)
+console.log(totalPopulation(object))
 
 
 
@@ -165,6 +164,16 @@ function totalPopulation(object){
 */
 
 //Code Here
+const obj = {
+  carb: "string1",
+  fat: "string2",
+  protein: "string3"
+}
+function ingredients(obj){
+const {carb, fat, protein} = obj
+return [carb, fat, protein]
+}
+console.log(ingredients(obj))
 
 
 
