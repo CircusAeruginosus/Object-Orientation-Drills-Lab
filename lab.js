@@ -284,6 +284,23 @@ Hermione.castSpell()
 */
 
 //Code Here
+class Phone {
+  constructor(brand, model, storage, color, price){
+    this.brand = brand;
+    this.model = model;
+    this.storage = storage;
+    this.color = color;
+    this.price = price;
+    this.sold = false
+  }
+  sell(){
+    this.sold = true
+    console.log(`${this.brand} ${this.model} has been sold.`)
+  }
+  changePrice(newPrice){
+    this.price = newPrice
+  }
+}
 
   
 /*
@@ -297,7 +314,9 @@ Hermione.castSpell()
 */
 
 //Code Here
-
+let phone1 = new Phone("Samsung", "Galaxy S9+", 16, "gray", 900);
+let phone2 = new Phone("Apple", "iPhone", 16, "black", 1000)
+let phone3 = new Phone("Google", "Pixel", 24, "blue", 1100)
 /* 
   Call the changePrice function on one of your phones, 
   don't forget to pass in a new price 
@@ -306,6 +325,9 @@ Hermione.castSpell()
 */ 
 
 //Code Here 
+phone1.changePrice(1000)
+
+console.log(phone1)
 
 
 /*
@@ -315,6 +337,9 @@ Hermione.castSpell()
 */
 
 //Code Here 
+phone2.sell()
+
+console.log(phone2)
 
 
 //////////////////////////// PROBLEM 15 ////////////////////////////
