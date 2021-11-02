@@ -100,7 +100,7 @@ var carDetails = {
 */
 
 //Code Here
-let {color, make, model, year} = carDetails
+const {color, make, model, year} = carDetails
 
 console.log(`${year} ${color} ${make} ${model}`)
 
@@ -136,6 +136,21 @@ function greeting( obj ) {
 */
 
 //Code Here
+
+// const object = {
+//   utah: 1,
+//   california: 2,
+//   texas: 3,
+//   arizona: 4
+// }
+function totalPopulation(object){
+  const {utah, california, texas, arizona} = object
+  return utah + california + texas + arizona
+}
+// totalPopulation(object)
+// console.log(object)
+
+
 
 
 
