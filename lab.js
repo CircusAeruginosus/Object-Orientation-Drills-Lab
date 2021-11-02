@@ -221,6 +221,17 @@ console.log(user)
 */
 
 //Code here
+class Cat {
+  constructor(name, age, color){
+    this.name = name;
+    this.age = age;
+    this.color = color
+  }
+}
+
+const Scout = new Cat("Scout", 11, "brown")
+
+console.log(Scout.name)
 
 
 
