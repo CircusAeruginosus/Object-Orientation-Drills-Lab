@@ -5,6 +5,10 @@
 */
 
 //Code here
+let me = {
+  name: "Caitlin",
+  age: "33"
+}
 
 
 
