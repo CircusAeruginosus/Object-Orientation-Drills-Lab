@@ -409,6 +409,17 @@ console.log(helensInfo)
 */
 
 //Code Here 
+class Vehicle {
+  constructor(capacity, color, mileage){
+    this.capacity = capacity;
+    this.color = color;
+    this.mileage = mileage
+  }
+  move(){
+    this.mileage += miles
+    console.log(this.mileage)
+  }
+}
 
 
 /*
@@ -416,6 +427,7 @@ console.log(helensInfo)
 */
 
 //Code Here
+const myFirstVehicle = new Vehicle(5, "black", 2000)
 
 
 /* 
@@ -427,16 +439,30 @@ console.log(helensInfo)
 */
 
 //Code Here
+class Motorcycle extends Vehicle{
+  constructor(capacity, color, mileage, make, isCool){
+    super(capacity, color, mileage,)
+    this.make = make;
+    this.isCool = isCool
+
+  }
+}
 
 /*
   Create a Motorcycle using your new class and save it to a variable called myFirstMotorcycle
 */
 
 //Code Here 
+const myFirstMotorcycle = new Motorcycle (2, "navy", 500, "Triumph", true )
 
 /*
   Call the move function on myFirstMotorcycle (don't forget the parameter)
 */
+
+//Code Here
+myFirstMotorcycle.move(50)
+
+console.log(myFirstMotorcycle)
 
 /*
   Let's make another class based off of Vehicle. 
@@ -455,6 +481,24 @@ console.log(helensInfo)
 */
 
 //Code Here
+class Boat extends Vehicle{
+  constructor(capacity, color, mileage, name, type, isSeaworthy){
+    super(capcity, color, mileage)
+    this.name = name;
+    this.type = type;
+    this.isSeaworthy = isSeaworthy
+  }
+  checkSeaworthiness(){
+    if(this.isSeaworthy){
+      console.log(`The ${this.color} ${yacht} ${this.name} is seaworthy!`)
+    }else{
+      console.log(`You need to get your ${this.type} in shape!`)
+    }
+  }
+  performMaintenance(){
+    this.isSeaworthy = true
+  }
+}
 
 
 /*
@@ -463,21 +507,31 @@ console.log(helensInfo)
 */
 
 //Code Here
+const myFirstBoat = new Boat(6, "navy", 1200, "Terror", "yacht", false)
 
 /*
   Call the checkSeaworthiness method on your new boat
 */
 
 //Code Here
+myFirstBoat.checkSeaworthiness()
+
+console.log(myFirstBoat)
 
 /*
   Now run the performMaintenance method on your boat
 */
 
 //Code Here 
+myFirstBoat.performMaintenance()
+
+console.log(myFirstBoat)
 
 /*
   Check the seaworthiness once more (you should be ready for the water!)
 */
 
 //Code Here
+myFirstBoat.checkSeaworthiness()
+
+console.log(myFirstBoat)
